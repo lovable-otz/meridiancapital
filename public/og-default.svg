@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d3b4d" />
+      <stop offset="100%" stop-color="#0a8a9b" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e6b34f" />
+      <stop offset="100%" stop-color="#ff7a4d" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="32" />
+  <rect x="80" y="80" width="1040" height="470" rx="28" fill="rgba(255,255,255,0.07)" />
+  <text x="120" y="220" fill="#ffffff" font-family="Inter, sans-serif" font-size="72" font-weight="700">Meridian Capital</text>
+  <text x="120" y="310" fill="#ffffff" font-family="Inter, sans-serif" font-size="36" font-weight="500">Capital for Miami's next chapter</text>
+  <rect x="120" y="360" width="320" height="16" rx="8" fill="url(#accent)" />
+  <text x="120" y="440" fill="#ffffff" font-family="Inter, sans-serif" font-size="28" font-weight="600">SBA loans • lines of credit • commercial real estate</text>
+  <circle cx="970" cy="350" r="120" fill="rgba(255,255,255,0.12)" />
+  <text x="900" y="370" fill="#ffffff" font-family="Inter, sans-serif" font-size="64" font-weight="700">Miami</text>
+  <text x="918" y="430" fill="#ffffff" font-family="Inter, sans-serif" font-size="32" font-weight="500">FL · USA</text>
+</svg>
