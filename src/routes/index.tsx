@@ -425,7 +425,7 @@ export function Header() {
                         Get matched in 60 seconds, soft credit pull only.
                       </div>
                     </div>
-                    <Button asChild size="sm" className="bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)]">
+                    <Button asChild size="sm" className="bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)]">
                       <a href={SITE_CONFIG.phoneHref}>
                         <PhoneCall className="h-4 w-4" /> Call {SITE_CONFIG.phone}
                       </a>
@@ -517,7 +517,7 @@ export function Header() {
         <div className="flex items-center gap-2">
           <Button
             size="sm"
-            className="hidden bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-elegant)] hover:opacity-95 sm:inline-flex"
+            className="hidden bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-elegant)] hover:opacity-95 sm:inline-flex"
             asChild
           >
             <a href={SITE_CONFIG.phoneHref}>
@@ -661,7 +661,7 @@ export function Header() {
                     <PhoneCall className="h-4 w-4 text-[color:var(--brand-blue)]" /> {SITE_CONFIG.phone}
                   </a>
                   <SheetClose asChild>
-                    <Button asChild className="w-full bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)]">
+                    <Button asChild className="w-full bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)]">
                       <a href={SITE_CONFIG.phoneHref}>
                         <PhoneCall className="h-4 w-4" /> Call {SITE_CONFIG.phone}
                       </a>
@@ -758,7 +758,7 @@ function Hero() {
           <Button
             size="lg"
             asChild
-            className="group relative w-full overflow-hidden bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)] hover:opacity-95 sm:w-auto"
+            className="group relative w-full overflow-hidden bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)] hover:opacity-95 sm:w-auto"
           >
             <Link to="/apply-now">
               Get My Loan Options
@@ -1183,7 +1183,7 @@ function WhyUs() {
 
         {/* 3x2 Art Deco grid of feature cards */}
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {cards.map(({ icon: Icon, title, desc, stat, statLabel }, i) => (
+          {cards.map(({ title, desc, stat, statLabel }) => (
             <article
               key={title}
               className="group relative overflow-hidden rounded-2xl border border-[color:var(--brand-gold)]/20 bg-card p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[color:var(--brand-gold)]/60 hover:shadow-[var(--shadow-elegant)]"
@@ -1209,20 +1209,8 @@ function WhyUs() {
               />
 
               <div className="relative">
-                <span className="text-[10px] font-semibold uppercase tracking-[0.32em] text-[color:var(--brand-gold)]">
-                  No. {String(i + 1).padStart(2, "0")}
-                </span>
-
-                <div className="mt-4 flex items-center gap-3">
-                  <span
-                    className="relative inline-flex h-12 w-12 items-center justify-center rounded-xl text-[color:var(--brand-gold-foreground)]"
-                    style={{ background: "var(--gradient-cta)" }}
-                  >
-                    <Icon className="h-5 w-5" />
-                  </span>
-                  <div className="text-3xl font-bold leading-none text-[color:var(--primary)]">
-                    {stat}
-                  </div>
+                <div className="text-3xl font-bold leading-none text-[color:var(--primary)]">
+                  {stat}
                 </div>
 
                 <h3 className="mt-5 text-xl font-semibold tracking-tight text-foreground">
@@ -1700,7 +1688,7 @@ function Industries() {
           <Button
             asChild
             size="lg"
-            className="bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)]"
+            className="bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)]"
           >
             <Link to="/miami" className="flex flex-row items-center gap-2">
               <span>Browse the Miami directory</span>
@@ -1847,7 +1835,7 @@ function Calculator() {
             <Button
               size="lg"
               asChild
-              className="mt-7 w-full bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)]"
+              className="mt-7 w-full bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)]"
             >
               <Link to="/apply-now">
                 Get real offers in {CITY} <ArrowRight className="h-4 w-4" />
@@ -2036,7 +2024,7 @@ function FinalCTA() {
           <Button
             size="lg"
             asChild
-            className="bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)]"
+            className="bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)]"
           >
             <a href="#apply">
               Get Started <ArrowRight className="h-4 w-4" />

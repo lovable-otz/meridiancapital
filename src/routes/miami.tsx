@@ -51,7 +51,7 @@ function MiamiHub() {
               broker, mapped to every neighborhood and adjacent city we serve.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild size="lg" className="bg-[image:var(--gradient-cta)] text-[color:var(--accent-success-foreground)]">
+              <Button asChild size="lg" className="bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)]">
                 <Link to="/apply-now">
                   Apply Now <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
