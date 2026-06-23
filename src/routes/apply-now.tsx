@@ -61,7 +61,7 @@ function ApplyNowPage() {
               <Lock className="h-3.5 w-3.5" /> 256-bit SSL secured
             </span>
             <span>•</span>
-            <span>$5K-$5M available</span>
+            <span>$15K-$7M available</span>
           </div>
         </div>
       </section>

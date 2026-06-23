@@ -91,28 +91,28 @@ const CITY_STATE = `${CITY}, FL`;
 
 const HOME_FAQS = [
   {
-    q: `How quickly can I get funded in ${CITY}?`,
-    a: `Many of our lenders can fund qualified ${CITY} businesses within 24-72 hours of approval. Same-day business loans are available for select products like merchant cash advances and short-term loans.`,
+    q: "How does the pre-qualification process work?",
+    a: `Share a few details about your ${CITY} business and we compare your file against our lender network with a soft credit pull. You see the products you actually qualify for in minutes - no commitment, no impact to your credit.`,
   },
   {
-    q: "Will checking options affect my credit score?",
-    a: "No. We use a soft credit pull to pre-qualify you, which does not affect your personal or business credit score.",
+    q: "What's the timeline from application to funding?",
+    a: `Initial decisions for ${CITY} files land in 1-2 business days. Most approved deals wire in 3-7 business days, with faster turn-around on short-term loans and revenue-based advances.`,
   },
   {
-    q: "What credit score is required?",
-    a: "Most of our lenders work with scores starting at 550 FICO. SBA loans and the best lines of credit typically require 650+.",
+    q: `Which industries do you work with in ${CITY}?`,
+    a: `We fund hospitality groups, restaurants, retail, professional services, healthcare, construction, logistics and ecommerce operators across ${CITY_STATE} and the surrounding metro.`,
   },
   {
-    q: "Can startups qualify?",
-    a: "Yes. We work with startup business lenders that fund companies as young as 3 months, and SBA startup loan programs for newer ventures.",
+    q: "What credit score and operating history are required?",
+    a: "Partner lenders typically look for 580+ FICO and at least 9 months in business. SBA-backed programs usually expect 650+ and two or more years of operating history.",
   },
   {
-    q: "What documents are needed?",
-    a: "Typically 3-6 months of business bank statements, basic business details and a valid ID. SBA loans may require tax returns and financials.",
+    q: "What loan amounts are available?",
+    a: `Funding ranges from $15,000 working capital advances up to $7,000,000 SBA and commercial real estate loans, structured to fit ${CITY} operators across industries and stages.`,
   },
   {
-    q: "How much can I borrow?",
-    a: "Funding ranges from $5,000 working capital advances up to $5,000,000 SBA and commercial real estate loans, depending on revenue and use of funds.",
+    q: "Will pre-qualifying affect my credit score?",
+    a: "No. We use a soft credit inquiry to match you with lenders - your personal and business credit scores are untouched. A hard pull only happens once you accept a specific lender's terms.",
   },
 ] as const;
 
@@ -1104,14 +1104,14 @@ function WhyUs() {
       icon: Clock,
       title: "Fast Decisions",
       desc: `Pre-qualify in minutes. Same-day funding available for qualified ${CITY} files.`,
-      stat: "< 24 hrs",
+      stat: "< 72 hrs",
       statLabel: "Average funding time",
     },
     {
       icon: Banknote,
       title: "Flexible Funding",
-      desc: "From $5,000 working capital to $5,000,000 SBA acquisitions - sized to the deal.",
-      stat: "$5K-$5M",
+      desc: "From $15,000 working capital to $7,000,000 SBA acquisitions - sized to the deal.",
+      stat: "$15K-$7M",
       statLabel: "Funding range",
     },
     {
@@ -1391,15 +1391,15 @@ function CityHubCTA() {
               <div className="text-xs uppercase tracking-wider text-white/70">Inside the hub</div>
               <div className="mt-4 grid grid-cols-3 gap-3 text-center">
                 <div className="rounded-xl bg-white/10 p-2.5 sm:p-4">
-                  <div className="text-base font-bold sm:text-2xl">10</div>
+                  <div className="text-base font-bold sm:text-2xl">9</div>
                   <div className="mt-1 whitespace-nowrap text-[9px] uppercase tracking-wide text-white/70 sm:text-[11px] sm:tracking-wider">Suburbs</div>
                 </div>
                 <div className="rounded-xl bg-white/10 p-2.5 sm:p-4">
-                  <div className="text-base font-bold sm:text-2xl">38</div>
+                  <div className="text-base font-bold sm:text-2xl">32</div>
                   <div className="mt-1 whitespace-nowrap text-[9px] uppercase tracking-wide text-white/70 sm:text-[11px] sm:tracking-wider">Programs</div>
                 </div>
                 <div className="rounded-xl bg-white/10 p-2.5 sm:p-4">
-                  <div className="text-base font-bold sm:text-2xl">80+</div>
+                  <div className="text-base font-bold sm:text-2xl">70+</div>
                   <div className="mt-1 whitespace-nowrap text-[9px] uppercase tracking-wide text-white/70 sm:text-[11px] sm:tracking-wider">Local Pages</div>
                 </div>
               </div>
@@ -1937,10 +1937,10 @@ function CityData() {
         </p>
         <div className="mt-10 grid grid-cols-2 gap-6 text-left md:grid-cols-4">
           {[
-            { k: "$5K-$5M", v: "Funding range" },
-            { k: "24 hrs", v: "Fastest funding" },
-            { k: "550+", v: "Minimum FICO" },
-            { k: "6 mo+", v: "Time in business" },
+            { k: "$15K-$7M", v: "Funding range" },
+            { k: "72 hrs", v: "Fastest funding" },
+            { k: "580+", v: "Minimum FICO" },
+            { k: "9 mo+", v: "Time in business" },
           ].map((s) => (
             <div key={s.v} className="rounded-2xl border border-border bg-card p-5">
               <div className="text-xl font-bold text-[color:var(--primary)] sm:text-2xl">{s.k}</div>
