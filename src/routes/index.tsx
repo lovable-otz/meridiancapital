@@ -403,7 +403,7 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent hover:bg-secondary focus:bg-secondary data-[state=open]:bg-secondary">Loan Products</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="light w-[900px] max-w-[calc(100vw-2rem)] overflow-x-auto bg-popover p-6 text-popover-foreground">
+                <div className="light w-[900px] max-w-[100vw] max-h-[calc(100vh-5rem)] overflow-auto bg-popover p-6 text-popover-foreground">
                   <div className="grid grid-cols-3 gap-6">
                     {LOAN_GROUPS.map((g) => (
                       <div key={g.heading}>
@@ -438,7 +438,7 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent hover:bg-secondary focus:bg-secondary data-[state=open]:bg-secondary">Industries</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="light w-[1100px] max-w-[calc(100vw-2rem)] overflow-x-auto bg-popover p-6 text-popover-foreground">
+                <div className="light w-[1100px] max-w-[100vw] max-h-[calc(100vh-5rem)] overflow-auto bg-popover p-6 text-popover-foreground">
                   <div className="grid grid-cols-4 gap-6">
                     {INDUSTRY_GROUPS.map((g) => (
                       <div key={g.heading}>
@@ -460,7 +460,7 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent hover:bg-secondary focus:bg-secondary data-[state=open]:bg-secondary">Service Areas</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="light w-[760px] max-w-[calc(100vw-2rem)] overflow-x-auto bg-popover p-6 text-popover-foreground">
+                <div className="light w-[760px] max-w-[100vw] max-h-[calc(100vh-5rem)] overflow-auto bg-popover p-6 text-popover-foreground">
                   <div className="mb-4 flex items-center gap-2 text-sm text-muted-foreground">
                     <MapPin className="h-4 w-4 text-[color:var(--brand-blue)]" />
                     Funding businesses across the greater {CITY_STATE} metro
@@ -496,7 +496,7 @@ export function Header() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-transparent hover:bg-secondary focus:bg-secondary data-[state=open]:bg-secondary">Resources</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <div className="light w-[520px] max-w-[calc(100vw-2rem)] overflow-x-auto bg-popover p-4 text-popover-foreground">
+                <div className="light w-[520px] max-w-[100vw] max-h-[calc(100vh-5rem)] overflow-auto bg-popover p-4 text-popover-foreground">
                   <div className="grid gap-1">
                     <MegaItem icon={BookOpen} label="How It Works" desc="Our 4-step funding process" homeHash="how" />
                     <MegaItem icon={Star} label="Success Stories" desc="Real Miami businesses we funded" homeHash="stories" />
