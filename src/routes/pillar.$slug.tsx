@@ -14,7 +14,7 @@ export const Route = createFileRoute("/pillar/$slug")({
     const p = getPillar(params.slug);
     const title = p ? `${p.title} in Miami, FL` : "Loan Program";
     const description =
-      p?.description ?? "Miami business financing programs from Meridian Capital.";
+      p?.description ?? "Miami business financing programs from Briarcliff Advances.";
     const path = `/pillar/${params.slug}`;
     return buildHead({
       title,
@@ -65,7 +65,7 @@ function PillarPage() {
               <ArrowLeft className="h-4 w-4" /> Miami hub
             </Link>
             <span className="text-muted-foreground">
-              {pillar.kind === "money" ? "Money pillar" : "Vertical pillar"} ·{" "}
+              {pillar.kind === "money" ? "Money pillar" : "Vertical pillar"} Â·{" "}
               <span className="font-medium text-foreground">{pillar.title}</span>
             </span>
           </div>
@@ -76,7 +76,7 @@ function PillarPage() {
           <div className="mx-auto max-w-4xl px-6 py-20">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
               <Sparkles className="h-3.5 w-3.5 text-[color:var(--brand-blue)]" />
-              Miami, FL · {pillar.kind === "money" ? "Money pillar" : "Vertical pillar"}
+              Miami, FL Â· {pillar.kind === "money" ? "Money pillar" : "Vertical pillar"}
             </div>
             <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">{pillar.title} in Miami, FL</h1>
             <p className="mt-3 text-xl font-medium text-[color:var(--brand-blue)]">{pillar.tagline}</p>
@@ -119,7 +119,7 @@ function PillarPage() {
             </p>
           ))}
           <p className="mt-4 text-muted-foreground">
-            Every Meridian Capital application runs through Florida-licensed lenders. We do one
+            Every Briarcliff Advances application runs through Florida-licensed lenders. We do one
             soft credit pull, present the matching offers, and let you choose. No fee until close.
           </p>
         </section>

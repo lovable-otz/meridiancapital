@@ -62,7 +62,7 @@ function SuburbPage() {
               <ArrowLeft className="h-4 w-4" /> Miami hub
             </Link>
             <span className="text-muted-foreground">
-              {suburb.county} · <span className="font-medium text-foreground">{suburb.name}</span>
+              {suburb.county} Â· <span className="font-medium text-foreground">{suburb.name}</span>
             </span>
           </div>
         </div>
@@ -72,7 +72,7 @@ function SuburbPage() {
           <div className="mx-auto max-w-4xl px-6 py-20">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-3 py-1 text-xs font-medium text-muted-foreground">
               <Sparkles className="h-3.5 w-3.5 text-[color:var(--brand-blue)]" />
-              {suburb.county} · ZIP {suburb.zips.join(", ")}
+              {suburb.county} Â· ZIP {suburb.zips.join(", ")}
             </div>
             <h1 className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">
               Business Loans in {suburb.name}, FL
@@ -136,7 +136,7 @@ function SuburbPage() {
         <section className="border-t border-border/60 bg-secondary/40">
           <div className="mx-auto max-w-7xl px-6 py-16">
             <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-              {suburb.name} businesses Meridian Capital works with
+              {suburb.name} businesses Briarcliff Advances works with
             </h2>
             <p className="mt-2 text-muted-foreground">Representative case studies: composite profiles of real funding outcomes.</p>
             <div className="mt-8 grid gap-5 md:grid-cols-3">

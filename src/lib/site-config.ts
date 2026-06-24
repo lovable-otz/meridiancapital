@@ -4,7 +4,7 @@
 
 const RAW_SITE_URL =
   (import.meta.env?.VITE_SITE_URL as string | undefined) ??
-  "https://meridiancapitalmiami.com";
+  "https://briarcliffadvances.com";
 
 export const SITE_URL: string = RAW_SITE_URL.replace(/\/+$/, "");
 
@@ -15,8 +15,8 @@ export const SITE_CONFIG = {
   url: SITE_URL,
   indexable: INDEXABLE,
 
-  name: "Meridian Capital",
-  legalName: "Meridian Capital Group, LLC",
+  name: "Briarcliff Advances",
+  legalName: "Briarcliff Advances Group, LLC",
   tagline: "Capital for Miami's next chapter",
   defaultDescription:
     "Business funding in Miami, FL. Compare SBA loans, commercial real estate, hospitality and equipment financing, and working capital from trusted Miami and South Florida lenders. Pre-qualify in minutes with no impact on credit.",
@@ -55,10 +55,10 @@ export const SITE_CONFIG = {
   areasServed: ["Miami, FL", "Miami-Dade County, FL", "South Florida"],
 
   social: {
-    googleBusinessProfile: "https://www.google.com/maps/place/Meridian+Capital+Miami",
-    linkedin: "https://www.linkedin.com/company/meridian-capital-miami",
-    facebook: "https://www.facebook.com/meridiancapitalmiami",
-    twitter: "https://twitter.com/MeridianCapMia",
+    googleBusinessProfile: "https://www.google.com/maps/place/Briarcliff+Advances+Miami",
+    linkedin: "https://www.linkedin.com/company/briarcliff-advances-miami",
+    facebook: "https://www.facebook.com/briarcliffadvances",
+    twitter: "https://twitter.com/BriarcliffAdvMia",
   },
 
   defaultOgImage: "/og-default.svg",
@@ -71,19 +71,19 @@ export const SITE_CONFIG = {
     fastestFundingHours: "24h",
   },
 
-  trustBadges: ["Soft Pull · No Credit Impact"],
+  trustBadges: ["Soft Pull Ã‚Â· No Credit Impact"],
 
   author: {
     name: "Daniela Vargas",
     title: "Head of Capital Markets",
     credentials: "MBA Wharton, 14+ years SBA, CRE and Latin American business financing",
-    profileUrl: "https://www.linkedin.com/in/daniela-vargas-meridiancapital",
+    profileUrl: "https://www.linkedin.com/in/daniela-vargas-briarcliffadvances",
   },
 
   featuredStat: {
     value: "3.1 million",
     claim: "Florida small businesses driving the third-largest state economy in the U.S.",
-    sourceName: "SBA Office of Advocacy — Florida Small Business Profile",
+    sourceName: "SBA Office of Advocacy Ã¢â‚¬â€ Florida Small Business Profile",
     sourceUrl: "https://advocacy.sba.gov/",
   },
 

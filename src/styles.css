@@ -63,7 +63,7 @@
 
 :root {
   --radius: 0.75rem;
-  /* Meridian Capital — Miami luxury palette:
+  /* Briarcliff Advances â€” Miami luxury palette:
      deep Caribbean teal + champagne gold + sunset coral + warm Miami sand.
      Evokes Brickell skyline, South Beach water, sunset over Biscayne Bay. */
   --background: oklch(1 0 0);
@@ -73,28 +73,28 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.20 0.04 220);
 
-  /* Deep teal — Caribbean / Biscayne Bay water at depth */
+  /* Deep teal â€” Caribbean / Biscayne Bay water at depth */
   --primary: oklch(0.32 0.10 200);
   --primary-foreground: oklch(0.99 0 0);
   --primary-glow: oklch(0.62 0.13 195);
 
-  /* Champagne gold — luxury accent (Miami real estate, hotels) */
+  /* Champagne gold â€” luxury accent (Miami real estate, hotels) */
   --brand-gold: oklch(0.78 0.13 85);
   --brand-gold-hover: oklch(0.72 0.14 80);
   --brand-gold-foreground: oklch(0.18 0.03 220);
 
-  /* Brand teal — Miami turquoise, brighter mid-tone.
+  /* Brand teal â€” Miami turquoise, brighter mid-tone.
      Components reference --brand-blue throughout; we keep the name but tune it
      toward Miami teal so visual identity matches the city. */
   --brand-blue: oklch(0.55 0.13 200);
   --brand-blue-hover: oklch(0.45 0.13 200);
   --brand-teal: oklch(0.72 0.11 190);
 
-  /* Sunset coral — Miami sunset, used in gradients & sun shapes */
+  /* Sunset coral â€” Miami sunset, used in gradients & sun shapes */
   --brand-coral: oklch(0.72 0.17 30);
   --brand-coral-hover: oklch(0.65 0.18 28);
 
-  /* Warm sand — beach + footer background */
+  /* Warm sand â€” beach + footer background */
   --brand-sand: oklch(0.97 0.018 75);
 
   /* CTA accent uses gold for the luxury Miami feel */

@@ -1,6 +1,6 @@
 # Instructions for AI builders (Lovable, Claude, etc.)
 
-This project is Meridian Capital - a Miami, FL business-lending marketplace site. It was cloned from a Long Beach precedent and rewritten for the South Florida market (Brickell, Wynwood, Little Havana, Coconut Grove, Coral Gables, Design District, Downtown Miami, Edgewater, Doral, Aventura). It has an SEO engine that took real work to set up. Respect the rules below or `npm run lint:seo` will fail the build.
+This project is Briarcliff Advances - a Miami, FL business-lending marketplace site. It was cloned from a Long Beach precedent and rewritten for the South Florida market (Brickell, Wynwood, Little Havana, Coconut Grove, Coral Gables, Design District, Downtown Miami, Edgewater, Doral, Aventura). It has an SEO engine that took real work to set up. Respect the rules below or `npm run lint:seo` will fail the build.
 
 ## Protected files - do NOT edit without explicit human approval
 

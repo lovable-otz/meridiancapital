@@ -143,7 +143,6 @@ function Index() {
       <main>
         <div aria-hidden className="h-16" />
         <Hero />
-        <TrustRow />
         <WhyUs />
         <CityIntro />
         <CityHubCTA />
@@ -154,6 +153,7 @@ function Index() {
         <CityData />
         <Security />
         <FAQSection />
+        <TrustRow />
         <FinalCTA />
       </main>
       <Footer />
@@ -392,9 +392,6 @@ export function Header() {
         <a href="/" className="flex items-center gap-2 font-semibold">
           <img src={siteLogoUrl} alt={SITE_CONFIG.name} className="h-9 w-auto" />
           <span className="sr-only">{SITE_CONFIG.name}</span>
-          <span className="ml-2 hidden rounded-full border border-border bg-secondary px-2 py-0.5 text-xs text-muted-foreground sm:inline">
-            {CITY_STATE}
-          </span>
         </a>
 
         {/* Desktop nav */}
@@ -538,7 +535,7 @@ export function Header() {
                   <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-[image:var(--gradient-primary)] text-primary-foreground">
                     <HandCoins className="h-3.5 w-3.5" />
                   </span>
-                  {SITE_CONFIG.name} · {CITY_STATE}
+                  {SITE_CONFIG.name} Â· {CITY_STATE}
                 </SheetTitle>
               </SheetHeader>
               <div className="px-3 py-3">
@@ -696,69 +693,26 @@ function Hero() {
       />
       <div
         className="pointer-events-none absolute inset-0"
-        style={{ background: "linear-gradient(180deg, oklch(0.22 0.05 215 / 0.72), oklch(0.16 0.04 215 / 0.88))" }}
+        style={{ background: "linear-gradient(180deg, oklch(0.18 0.04 215 / 0.78), oklch(0.12 0.03 215 / 0.92))" }}
         aria-hidden="true"
       />
-      {/* Deco glamour: sunburst behind headline + horizon arches + diamond grid wash */}
-      <SunShape className="pointer-events-none absolute -top-24 -right-24 h-[28rem] w-[28rem] text-[color:var(--brand-gold)] opacity-35" />
-      <SunShape className="pointer-events-none absolute -bottom-32 -left-20 h-72 w-72 text-[color:var(--brand-coral)] opacity-20" />
-      <DotGrid className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/3 text-[color:var(--brand-gold)]" opacity={0.07} />
-      <OceanWaves className="pointer-events-none absolute inset-x-0 bottom-0 h-32 w-full text-[color:var(--brand-gold)] md:h-44" />
-      {/* Top deco pinstripe */}
-      <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[color:var(--brand-gold)]/60 to-transparent" />
-      <div className="pointer-events-none absolute inset-x-0 top-1 h-px bg-gradient-to-r from-transparent via-[color:var(--brand-gold)]/20 to-transparent" />
 
-      <div className="relative mx-auto max-w-7xl px-6 py-10 md:py-28">
-        <h1 className="mt-6 text-4xl font-bold leading-[1.04] tracking-tight md:text-6xl lg:text-[5rem]">
+      <div className="relative mx-auto max-w-6xl px-6 py-16 md:py-32">
+        <h1 className="max-w-4xl text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
           Capital that closes at{" "}
-          <span
-            className="bg-clip-text text-transparent"
-            style={{ backgroundImage: "linear-gradient(90deg, oklch(0.85 0.13 85), oklch(0.78 0.13 85), oklch(0.72 0.17 30))" }}
-          >
-            Miami pace.
-          </span>
-          <span className="block text-[color:var(--brand-gold)]/85 text-sm font-medium tracking-[0.4em] uppercase mt-4 md:text-base">
-            Business loans · SBA · Commercial real estate
-          </span>
+          <span className="text-[color:var(--brand-gold)]">Miami pace.</span>
         </h1>
 
-        {/* Gold deco divider with diamond ornament */}
-        <div className="mt-6 flex items-center gap-3" aria-hidden="true">
-          <span className="h-px w-12 bg-[color:var(--brand-gold)]/70" />
-          <DiamondMark className="h-2.5 w-2.5 text-[color:var(--brand-gold)]" />
-          <span className="h-px w-24 bg-[color:var(--brand-gold)]/40" />
-          <DiamondMark className="h-2 w-2 text-[color:var(--brand-gold)]/70" />
-          <span className="h-px flex-1 max-w-xs bg-gradient-to-r from-[color:var(--brand-gold)]/30 to-transparent" />
-        </div>
-
-        <p className="mt-6 max-w-xl text-lg text-white/85 md:text-xl">
-          Business loans, SBA financing and commercial real estate capital,
-          built around Brickell operators, Coral Gables practices, Wynwood
-          founders and Doral logistics. Term sheets in as little as{" "}
-          <strong className="text-[color:var(--brand-gold)]">24 hours</strong>.
+        <p className="mt-6 max-w-2xl text-lg text-white/80 md:text-xl">
+          Business loans, SBA financing and commercial real estate capital — built around Brickell operators, Coral Gables practices, Wynwood founders and Doral logistics. Term sheets in as little as{" "}
+          <strong className="font-semibold text-[color:var(--brand-gold)]">24 hours</strong>.
         </p>
 
-        <ul className="mt-7 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-2.5 text-sm text-white/85 sm:grid-cols-2">
-          {[
-            "No impact on credit score",
-            "75+ lender network",
-            "Bilingual EN/ES specialists",
-            "Funding from $5K to $5M",
-          ].map((t) => (
-            <li key={t} className="flex items-center gap-2.5">
-              <span className="inline-flex h-5 w-5 items-center justify-center rounded-full border border-[color:var(--brand-gold)]/40 bg-white/5">
-                <CheckCircle2 className="h-3 w-3 text-[color:var(--brand-gold)]" />
-              </span>
-              {t}
-            </li>
-          ))}
-        </ul>
-
-        <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <div className="mt-10 flex flex-col gap-3 sm:flex-row">
           <Button
             size="lg"
             asChild
-            className="group relative w-full overflow-hidden bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] shadow-[var(--shadow-glow)] hover:opacity-95 sm:w-auto"
+            className="group w-full bg-[color:var(--brand-gold)] hover:bg-[color:var(--brand-gold-hover)] text-[color:var(--accent-success-foreground)] sm:w-auto"
           >
             <Link to="/apply-now">
               Get My Loan Options
@@ -769,21 +723,25 @@ function Hero() {
             size="lg"
             variant="outline"
             asChild
-            className="w-full border-[color:var(--brand-gold)]/50 bg-transparent text-white hover:bg-[color:var(--brand-gold)]/15 hover:text-white sm:w-auto"
+            className="w-full border-white/25 bg-transparent text-white hover:bg-white/10 hover:text-white sm:w-auto"
           >
             <Link to="/apply-now">Talk to a Banker</Link>
           </Button>
         </div>
 
-        <div className="mt-7 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs uppercase tracking-[0.18em] text-white/65">
-          <span className="inline-flex items-center gap-1.5">
-            <Lock className="h-3 w-3 text-[color:var(--brand-gold)]" /> 256-bit SSL
-          </span>
-          <DiamondMark className="h-1.5 w-1.5 text-[color:var(--brand-gold)]/60" />
-          <span>Soft credit pull</span>
-          <DiamondMark className="h-1.5 w-1.5 text-[color:var(--brand-gold)]/60" />
-          <span>No obligation</span>
-        </div>
+        <ul className="mt-10 grid max-w-3xl grid-cols-2 gap-x-6 gap-y-3 text-sm text-white/85 sm:grid-cols-4">
+          {[
+            "No credit impact",
+            "75+ lender network",
+            "Bilingual EN/ES",
+            "$5K – $5M funding",
+          ].map((t) => (
+            <li key={t} className="flex items-center gap-2">
+              <CheckCircle2 className="h-4 w-4 shrink-0 text-[color:var(--brand-gold)]" />
+              <span>{t}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
@@ -802,9 +760,9 @@ function DiamondMark({ className = "" }: { className?: string }) {
 /* ---------------- Decorative SVG shapes - Miami Art Deco + tropical ---------------- */
 
 /**
- * OceanWaves → Art Deco horizon arches.
+ * OceanWaves â†’ Art Deco horizon arches.
  * Three concentric arches across the width, evocative of MiMo grille work and
- * the curved façades on Lincoln Road and Ocean Drive.
+ * the curved faÃ§ades on Lincoln Road and Ocean Drive.
  */
 function OceanWaves({ className }: Readonly<{ className?: string }>) {
   return (
@@ -827,7 +785,7 @@ function OceanWaves({ className }: Readonly<{ className?: string }>) {
 }
 
 /**
- * SunShape → Art Deco sunburst.
+ * SunShape â†’ Art Deco sunburst.
  * Thin radial rays from a small center disk, in the SoBe / Bacardi Tower spirit.
  * Replaces the previous solid radial-gradient circle.
  */
@@ -861,7 +819,7 @@ function SunShape({ className }: Readonly<{ className?: string }>) {
 }
 
 /**
- * PalmLeaf → Monstera leaf silhouette.
+ * PalmLeaf â†’ Monstera leaf silhouette.
  * (Currently unused in the layout, kept exported for future placement.)
  */
 function PalmLeaf({ className }: Readonly<{ className?: string }>) {
@@ -886,7 +844,7 @@ function PalmLeaf({ className }: Readonly<{ className?: string }>) {
 }
 
 /**
- * WavyLines → Art Deco grille (chevron stripes).
+ * WavyLines â†’ Art Deco grille (chevron stripes).
  * Replaces the horizontal wavy lines with stacked chevrons, the signature
  * Art Deco "speed lines" motif found across Miami Beach building facades.
  */
@@ -925,7 +883,7 @@ function WavyLines({
 }
 
 /**
- * DotGrid → Miami diamond grid.
+ * DotGrid â†’ Miami diamond grid.
  * Rhombus tessellation, the Art Deco terrazzo / breeze-block pattern.
  */
 function DotGrid({
@@ -961,7 +919,7 @@ function DotGrid({
 }
 
 /**
- * BlobShape → Stylized monstera/banana leaf.
+ * BlobShape â†’ Stylized monstera/banana leaf.
  * Tropical, lush, slightly off-axis - a Miami botanical accent for hero corners
  * and background flourishes.
  */
@@ -996,7 +954,7 @@ function BlobShape({
 }
 
 /**
- * RingShape → Art Deco fan.
+ * RingShape â†’ Art Deco fan.
  * A half-fan composed of alternating radial wedges, the classic
  * "Florida sunset" deco motif (think the lobby of the Delano).
  */
@@ -1056,42 +1014,59 @@ function TrustRow() {
   ];
   const badges = SITE_CONFIG.trustBadges;
   return (
-    <section className="border-b border-border bg-background">
-      <div className="mx-auto max-w-7xl px-6 py-6">
-        <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
-            {items.map((i) => (
-              <div key={i.label} className="flex items-center gap-2.5">
-                <span className="flex h-8 w-8 items-center justify-center rounded-md bg-secondary text-[color:var(--brand-blue)]">
-                  <i.icon className={`h-4 w-4 ${i.stars ? "fill-amber-400 text-amber-400" : ""}`} />
-                </span>
-                <span className="leading-tight">
-                  <span className="block text-sm font-bold tracking-tight text-foreground">{i.value}</span>
-                  <span className="block text-[11px] text-muted-foreground">{i.label}</span>
-                </span>
+    <section className="border-y border-border bg-background py-14 md:py-20">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mx-auto max-w-2xl text-center">
+          <span className="inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[color:var(--brand-gold)]">
+            <span className="h-px w-8 bg-[color:var(--brand-gold)]/60" />
+            By the numbers
+            <span className="h-px w-8 bg-[color:var(--brand-gold)]/60" />
+          </span>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-foreground md:text-4xl">
+            Trusted by {CITY} operators
+          </h2>
+        </div>
+
+        <div className="mt-10 grid grid-cols-2 gap-4 md:mt-14 md:grid-cols-4 md:gap-6">
+          {items.map((i) => (
+            <div
+              key={i.label}
+              className="group relative overflow-hidden rounded-2xl border border-border bg-[color:var(--brand-sand)]/30 p-6 transition hover:border-[color:var(--brand-gold)]/50 hover:bg-[color:var(--brand-sand)]/50 md:p-8"
+            >
+              <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-[color:var(--brand-gold)] to-transparent opacity-60" aria-hidden="true" />
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-white text-[color:var(--brand-blue)] shadow-sm">
+                <i.icon className={`h-5 w-5 ${i.stars ? "fill-amber-400 text-amber-400" : ""}`} />
+              </span>
+              <div className="mt-5 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                {i.value}
               </div>
-            ))}
-          </div>
-          <div className="hidden h-8 w-px bg-border lg:block" aria-hidden="true" />
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-[11px] font-medium text-muted-foreground">
+              <div className="mt-1 text-sm text-muted-foreground">{i.label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-10 flex flex-col items-center gap-4 border-t border-border pt-6 md:flex-row md:justify-between">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-medium text-muted-foreground">
             {badges.map((b) => (
               <span key={b} className="flex items-center gap-1.5">
-                <CheckCircle2 className="h-3 w-3 text-[color:var(--accent-success)]" />
+                <CheckCircle2 className="h-3.5 w-3.5 text-[color:var(--accent-success)]" />
                 {b}
               </span>
             ))}
           </div>
+          <p className="text-center text-xs text-muted-foreground md:text-right">
+            <strong className="font-semibold text-foreground">{SITE_CONFIG.featuredStat.value}</strong>{" "}
+            {SITE_CONFIG.featuredStat.claim}.{" "}
+            <a
+              href={SITE_CONFIG.featuredStat.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-foreground"
+            >
+              {SITE_CONFIG.featuredStat.sourceName}
+            </a>
+          </p>
         </div>
-        <p className="mt-4 text-center text-[11px] text-muted-foreground">
-          There are <strong className="font-semibold text-foreground">{SITE_CONFIG.featuredStat.value}</strong> {SITE_CONFIG.featuredStat.claim}. <a
-            href={SITE_CONFIG.featuredStat.sourceUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline hover:text-foreground"
-          >
-            Source: {SITE_CONFIG.featuredStat.sourceName}
-          </a>.
-        </p>
       </div>
     </section>
   );
@@ -1166,7 +1141,7 @@ function WhyUs() {
             <span className="h-px w-16 bg-[color:var(--brand-gold)]/60" />
             <DiamondMark className="h-2.5 w-2.5" />
             <span className="text-xs font-semibold uppercase tracking-[0.32em]">
-              The Meridian Edge
+              The Briarcliff Edge
             </span>
             <DiamondMark className="h-2.5 w-2.5" />
             <span className="h-px w-16 bg-[color:var(--brand-gold)]/60" />
@@ -1233,7 +1208,7 @@ function WhyUs() {
         <div className="mt-14 flex items-center justify-center gap-3 text-[color:var(--brand-gold)]/70" aria-hidden="true">
           <span className="h-px flex-1 max-w-xs bg-gradient-to-r from-transparent to-[color:var(--brand-gold)]/50" />
           <DiamondMark className="h-2 w-2" />
-          <span className="text-[10px] font-semibold uppercase tracking-[0.4em]">M · C</span>
+          <span className="text-[10px] font-semibold uppercase tracking-[0.4em]">M Â· C</span>
           <DiamondMark className="h-2 w-2" />
           <span className="h-px flex-1 max-w-xs bg-gradient-to-l from-transparent to-[color:var(--brand-gold)]/50" />
         </div>
@@ -1319,7 +1294,7 @@ function CityHubCTA() {
   const highlights = [
     "10 neighborhoods & adjacent cities",
     "38 loan programs mapped locally",
-    "Direct links to every suburb × service page",
+    "Direct links to every suburb Ã— service page",
   ];
   return (
     <section className="relative overflow-hidden py-10 sm:py-20">
@@ -1407,13 +1382,15 @@ function CityHubCTA() {
 
 /* ---------------- Loan Types ---------------- */
 function LoanTypes() {
+  // serviceIcons.png is a 3-col × 2-row sprite (1536×1024, each cell 512×512).
+  // spritePos is the background-position when background-size is 300% 200%.
   const loans = [
-    { icon: FileText, title: "SBA Loans", tagline: "From 8.5% APR", desc: "SBA 7(a) and 504 - the lowest rates and longest terms available to Miami small businesses.", popular: true },
-    { icon: LineChart, title: "Working Capital Loans", tagline: "Funded in 24 hrs", desc: "Cover payroll, inventory and seasonal gaps with capital sized to your real cash cycle.", popular: true },
-    { icon: CreditCard, title: "Business Line of Credit", tagline: "From 9.9% APR", desc: "Revolving capital you draw when you need it. Only pay interest on what you use.", popular: false },
-    { icon: Wrench, title: "Equipment Financing", tagline: "From 6.99%", desc: "Equipment serves as collateral. Easy approvals for trucking, construction and medical.", popular: false },
-    { icon: Home, title: "Commercial Real Estate", tagline: "Up to 25-yr amort.", desc: "SBA 504 and conventional CRE for Brickell, Wynwood, Doral and the Miami corridor.", popular: false },
-    { icon: Receipt, title: "Invoice Factoring & AR", tagline: "Same-day cash", desc: "Turn outstanding invoices into liquidity. Built for PortMiami and MIA cargo flows.", popular: false },
+    { spritePos: "0% 0%",   title: "SBA Loans", tagline: "From 8.5% APR", desc: "SBA 7(a) and 504 - the lowest rates and longest terms available to Miami small businesses.", popular: true },
+    { spritePos: "50% 0%",  title: "Working Capital Loans", tagline: "Funded in 24 hrs", desc: "Cover payroll, inventory and seasonal gaps with capital sized to your real cash cycle.", popular: true },
+    { spritePos: "100% 0%", title: "Business Line of Credit", tagline: "From 9.9% APR", desc: "Revolving capital you draw when you need it. Only pay interest on what you use.", popular: false },
+    { spritePos: "0% 100%",   title: "Equipment Financing", tagline: "From 6.99%", desc: "Equipment serves as collateral. Easy approvals for trucking, construction and medical.", popular: false },
+    { spritePos: "50% 100%",  title: "Commercial Real Estate", tagline: "Up to 25-yr amort.", desc: "SBA 504 and conventional CRE for Brickell, Wynwood, Doral and the Miami corridor.", popular: false },
+    { spritePos: "100% 100%", title: "Invoice Factoring & AR", tagline: "Same-day cash", desc: "Turn outstanding invoices into liquidity. Built for PortMiami and MIA cargo flows.", popular: false },
   ];
   return (
     <section id="loans" className="relative overflow-hidden bg-background py-20 md:py-24">
@@ -1442,7 +1419,7 @@ function LoanTypes() {
 
         {/* Cards grid */}
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {loans.map(({ icon: Icon, title, tagline, desc, popular }, i) => (
+          {loans.map(({ spritePos, title, tagline, desc, popular }, i) => (
             <Link
               to="/apply-now"
               key={title}
@@ -1469,11 +1446,18 @@ function LoanTypes() {
                 </span>
               </div>
 
-              <div className="mt-4 inline-flex h-12 w-12 items-center justify-center rounded-xl text-[color:var(--brand-gold-foreground)] shadow-sm" style={{ background: "var(--gradient-cta)" }}>
-                <Icon className="h-5 w-5" />
-              </div>
+              <div
+                role="img"
+                aria-label={`${title} icon`}
+                className="-ml-7 h-32 w-32 bg-no-repeat"
+                style={{
+                  backgroundImage: "url(/serviceIcons.png)",
+                  backgroundSize: "300% 200%",
+                  backgroundPosition: spritePos,
+                }}
+              />
 
-              <h3 className="mt-5 text-xl font-semibold tracking-tight">
+              <h3 className="-mt-3 text-xl font-semibold tracking-tight">
                 {title}
               </h3>
               <div className="mt-1.5 text-sm font-medium text-[color:var(--brand-gold)]">
@@ -1603,16 +1587,16 @@ function HowItWorks() {
 /* ---------------- Industries (Art Deco tiles + monstera accents) ---------------- */
 function Industries() {
   const inds = [
-    { icon: Home,             label: "Real Estate",         slug: "real-estate",          micro: "CRE · 1031 · Bridge" },
-    { icon: UtensilsCrossed,  label: "Hospitality",         slug: "restaurants",          micro: "Hotels · Restaurants" },
-    { icon: Stethoscope,      label: "Healthcare",          slug: "healthcare",           micro: "Med-spa · Dental · MD" },
-    { icon: Briefcase,        label: "Professional",        slug: "professional-services",micro: "Law · Accounting" },
-    { icon: Truck,            label: "Logistics",           slug: "transportation",       micro: "PortMiami · MIA" },
-    { icon: Building2,        label: "Construction",        slug: "construction",         micro: "GC · Subs · Yards" },
-    { icon: ShoppingBag,      label: "Retail & Luxury",     slug: "retail",               micro: "Aventura · D.D." },
-    { icon: Factory,          label: "Manufacturing",       slug: "manufacturing",        micro: "Doral · Medley" },
-    { icon: Cpu,              label: "Technology",          slug: "technology",           micro: "SaaS · Fintech" },
-    { icon: Globe,            label: "E-Commerce",          slug: "e-commerce",           micro: "DTC · Cross-border" },
+    { icon: Home,             label: "Real Estate",         slug: "real-estate",          micro: "CRE Â· 1031 Â· Bridge" },
+    { icon: UtensilsCrossed,  label: "Hospitality",         slug: "restaurants",          micro: "Hotels Â· Restaurants" },
+    { icon: Stethoscope,      label: "Healthcare",          slug: "healthcare",           micro: "Med-spa Â· Dental Â· MD" },
+    { icon: Briefcase,        label: "Professional",        slug: "professional-services",micro: "Law Â· Accounting" },
+    { icon: Truck,            label: "Logistics",           slug: "transportation",       micro: "PortMiami Â· MIA" },
+    { icon: Building2,        label: "Construction",        slug: "construction",         micro: "GC Â· Subs Â· Yards" },
+    { icon: ShoppingBag,      label: "Retail & Luxury",     slug: "retail",               micro: "Aventura Â· D.D." },
+    { icon: Factory,          label: "Manufacturing",       slug: "manufacturing",        micro: "Doral Â· Medley" },
+    { icon: Cpu,              label: "Technology",          slug: "technology",           micro: "SaaS Â· Fintech" },
+    { icon: Globe,            label: "E-Commerce",          slug: "e-commerce",           micro: "DTC Â· Cross-border" },
   ];
   return (
     <section id="industries" className="relative overflow-hidden bg-[color:var(--brand-sand)]/30 py-20 md:py-24">
@@ -1657,12 +1641,7 @@ function Industries() {
               {/* Corner diamond */}
               <DiamondMark className="pointer-events-none absolute right-3 top-3 h-1.5 w-1.5 text-[color:var(--brand-gold)]/60" />
 
-              <span
-                className="relative inline-flex h-12 w-12 items-center justify-center rounded-xl text-[color:var(--brand-gold-foreground)] shadow-sm transition-transform group-hover:scale-110"
-                style={{ background: "var(--gradient-cta)" }}
-              >
-                <Icon className="h-5 w-5" />
-              </span>
+              <Icon className="relative h-12 w-12 text-[color:var(--brand-gold)] transition-transform group-hover:scale-110" strokeWidth={1.6} />
 
               <h3 className="relative mt-4 text-base font-semibold tracking-tight">
                 {label}
@@ -1682,7 +1661,7 @@ function Industries() {
         <div className="mt-12 flex flex-col items-center gap-4 px-4 text-center sm:flex-row sm:justify-center sm:gap-6">
           <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-[color:var(--brand-gold)]">
             <DiamondMark className="h-1.5 w-1.5" />
-            38 loan programs · 10 neighborhoods
+            38 loan programs Â· 10 neighborhoods
             <DiamondMark className="h-1.5 w-1.5" />
           </div>
           <Button
@@ -1843,7 +1822,7 @@ function Calculator() {
             </Button>
 
             <p className="mt-4 text-center text-[10px] uppercase tracking-[0.22em] text-white/55">
-              Estimate only · Real terms set by lender at close
+              Estimate only Â· Real terms set by lender at close
             </p>
           </div>
         </div>
@@ -1868,7 +1847,7 @@ function Field({ label, value, children }: Readonly<{ label: string; value: stri
 function SuccessStories() {
   const stories = [
     { name: "Brickell Avenue Wealth Advisors", amount: "$1,400,000", result: "Funded a partner buy-in and Brickell office build-out.", type: "SBA 7(a) Loan" },
-    { name: "Calle Ocho Cafetería Group", amount: "$320,000", result: "Acquired second location plus working capital for opening.", type: "SBA 7(a) + Working Capital" },
+    { name: "Calle Ocho CafeterÃ­a Group", amount: "$320,000", result: "Acquired second location plus working capital for opening.", type: "SBA 7(a) + Working Capital" },
     { name: "NW 25th Freight Forwarders", amount: "$2,100,000", result: "Purchased a Doral flex warehouse and added two reefer trucks.", type: "SBA 504 + Equipment" },
   ];
   return (
@@ -2066,7 +2045,7 @@ export function Footer() {
                 {SITE_CONFIG.address.postalCode}
               </div>
             ) : (
-              <div>Serving {SITE_CONFIG.areasServed.join(" · ")}</div>
+              <div>Serving {SITE_CONFIG.areasServed.join(" Â· ")}</div>
             )}
             <div>
               <a href={SITE_CONFIG.phoneHref} className="hover:text-foreground">
@@ -2110,7 +2089,7 @@ export function Footer() {
             { label: "Apply Now", href: "/apply-now" },
             { label: "Contact", href: "/contact" },
             { label: "Miami Hub", href: "/miami" },
-            { label: "Brickell · Downtown · Aventura", href: "/miami" },
+            { label: "Brickell Â· Downtown Â· Aventura", href: "/miami" },
             { label: `Call ${SITE_CONFIG.phone}`, href: SITE_CONFIG.phoneHref },
           ]}
         />
@@ -2128,7 +2107,7 @@ export function Footer() {
             decisions.
           </p>
           <div className="flex flex-col items-start justify-between gap-2 sm:flex-row sm:items-center">
-            <p>© {new Date().getFullYear()} {SITE_CONFIG.name}, {CITY_STATE}. All rights reserved.</p>
+            <p>Â© {new Date().getFullYear()} {SITE_CONFIG.name}, {CITY_STATE}. All rights reserved.</p>
             <p>
               Reviewed by{" "}
               <a

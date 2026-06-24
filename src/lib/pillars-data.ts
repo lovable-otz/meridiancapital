@@ -1,4 +1,4 @@
-// Meridian Capital — SEO pillar pages for Miami, FL.
+// Briarcliff Advances â€” SEO pillar pages for Miami, FL.
 // 18 Money Pillars + 20 Vertical Pillars = 38 total.
 
 export type PillarKind = "money" | "vertical";
@@ -11,7 +11,7 @@ export type Pillar = {
   description: string;
   bullets: string[];
   highlight: string;
-  /** Approximate national monthly search volume — used for SEO ordering. */
+  /** Approximate national monthly search volume â€” used for SEO ordering. */
   volume?: number;
 };
 
@@ -117,7 +117,7 @@ export const MONEY_PILLARS: Pillar[] = [
     kind: "money",
     tagline: "Buy an existing Miami business",
     description:
-      "SBA-backed acquisition financing for partner buyouts, succession purchases, and bolt-on deals across Miami-Dade — particularly active for second-generation Little Havana and Coral Gables family-business transitions.",
+      "SBA-backed acquisition financing for partner buyouts, succession purchases, and bolt-on deals across Miami-Dade â€” particularly active for second-generation Little Havana and Coral Gables family-business transitions.",
     bullets: ["10% down with SBA 7(a)", "Goodwill financing", "Earn-out friendly"],
     highlight: "Up to $5M",
   },
@@ -167,7 +167,7 @@ export const MONEY_PILLARS: Pillar[] = [
     kind: "money",
     tagline: "Local lender access for Miami owners",
     description:
-      "Skip the dial-the-bank routine. Get matched with 75+ vetted regional and national lenders that actively fund Miami businesses — bilingual specialists familiar with Latin American trade and cross-border ownership structures.",
+      "Skip the dial-the-bank routine. Get matched with 75+ vetted regional and national lenders that actively fund Miami businesses â€” bilingual specialists familiar with Latin American trade and cross-border ownership structures.",
     bullets: ["75+ lender network", "Florida SBA Preferred banks", "Bilingual EN/ES support"],
     highlight: "60-second match",
   },
@@ -243,7 +243,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Clinics & physician groups",
     description:
-      "Acquisition, partner buy-in, expansion and working capital tailored to the rhythms of insurance reimbursements — sized for Miami's dense medical aesthetics, cardiology and primary-care market.",
+      "Acquisition, partner buy-in, expansion and working capital tailored to the rhythms of insurance reimbursements â€” sized for Miami's dense medical aesthetics, cardiology and primary-care market.",
     bullets: ["Up to 100% project financing", "Terms up to 10 years", "Deferred payment options"],
     highlight: "$50K-$7M",
     volume: 500,
@@ -254,7 +254,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Fit-out, expansion & equipment",
     description:
-      "Open the second location, refresh the dining room, or weather a slow season with capital structured for Miami hospitality cash flow — Calle Ocho cafés to Brickell steakhouses.",
+      "Open the second location, refresh the dining room, or weather a slow season with capital structured for Miami hospitality cash flow â€” Calle Ocho cafÃ©s to Brickell steakhouses.",
     bullets: ["Daily, weekly or monthly payments", "Same-day approvals", "No equity required"],
     highlight: "$25K-$2M",
     volume: 500,
@@ -275,7 +275,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Ground-up & renovation projects",
     description:
-      "Multi-draw financing aligned to your construction schedule with interest-only periods during the build phase — sized for Miami mixed-use, hospitality and Brickell condo retail builds.",
+      "Multi-draw financing aligned to your construction schedule with interest-only periods during the build phase â€” sized for Miami mixed-use, hospitality and Brickell condo retail builds.",
     bullets: ["Up to 80% LTC", "12-36 month terms", "Convertible to permanent financing"],
     highlight: "$250K-$25M",
   },
@@ -295,7 +295,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Beauty, wellness & medical aesthetics",
     description:
-      "Chair rentals, suite build-outs, product inventory and marketing — plus medical aesthetics financing for the laser, injectables and body-contouring market Miami is known for.",
+      "Chair rentals, suite build-outs, product inventory and marketing â€” plus medical aesthetics financing for the laser, injectables and body-contouring market Miami is known for.",
     bullets: ["Equipment & build-out", "Med-spa & aesthetics", "Suite operators welcome"],
     highlight: "Quick pre-qual",
   },
@@ -305,7 +305,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Inventory & storefront capital",
     description:
-      "Stock up for the season, open a second location, or refresh your Miami storefront with capital sized to retail cash flow cycles — Aventura Mall to Design District flagships.",
+      "Stock up for the season, open a second location, or refresh your Miami storefront with capital sized to retail cash flow cycles â€” Aventura Mall to Design District flagships.",
     bullets: ["Seasonal payment structures", "Inventory financing", "POS-integrated underwriting"],
     highlight: "$15K-$1M",
   },
@@ -335,7 +335,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Equipment & build-out",
     description:
-      "Outfit the floor, expand into recovery and group fitness, or refinance higher-rate equipment leases — Miami is one of the most concentrated boutique-fitness markets in the U.S.",
+      "Outfit the floor, expand into recovery and group fitness, or refinance higher-rate equipment leases â€” Miami is one of the most concentrated boutique-fitness markets in the U.S.",
     bullets: ["Cardio + strength bundles", "Recovery & spa add-ons", "Refinance options"],
     highlight: "Up to $500K",
   },
@@ -355,7 +355,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Tractors, harvesters & implements",
     description:
-      "Seasonal-friendly structures tailored to farm cash flow with deferred payments aligned to harvest cycles — Homestead, Redland, and South Miami-Dade growers.",
+      "Seasonal-friendly structures tailored to farm cash flow with deferred payments aligned to harvest cycles â€” Homestead, Redland, and South Miami-Dade growers.",
     bullets: ["Seasonal payment options", "New & used equipment", "Trade-in friendly"],
     highlight: "Same-week funding",
   },
@@ -365,7 +365,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Mowers, trucks and trailers",
     description:
-      "Build out your landscaping fleet without draining the off-season reserves — Miami's year-round climate keeps fleets running and crews paid 12 months a year.",
+      "Build out your landscaping fleet without draining the off-season reserves â€” Miami's year-round climate keeps fleets running and crews paid 12 months a year.",
     bullets: ["Bundle multiple units", "Skip-payment options", "Soft credit pulls"],
     highlight: "Pre-qualify in minutes",
   },
@@ -395,7 +395,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Fast-track funding for veteran owners",
     description:
-      "Expedited SBA Express loans for veteran-owned businesses with reduced fees and 36-hour SBA turnaround — Florida ranks in the top three states for veteran-owned business density.",
+      "Expedited SBA Express loans for veteran-owned businesses with reduced fees and 36-hour SBA turnaround â€” Florida ranks in the top three states for veteran-owned business density.",
     bullets: ["Up to $500K", "Reduced SBA fees for veterans", "36-hour SBA turnaround"],
     highlight: "Veteran-friendly",
   },
@@ -405,7 +405,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Capital for women-owned businesses",
     description:
-      "Working capital, SBA and microloan programs tailored to certified women-owned businesses across Miami — one of the highest-density Latina-women-owned business markets in the U.S.",
+      "Working capital, SBA and microloan programs tailored to certified women-owned businesses across Miami â€” one of the highest-density Latina-women-owned business markets in the U.S.",
     bullets: ["SBA & microloans", "WBE-friendly underwriting", "$5K-$5M"],
     highlight: "Equity-free",
   },
