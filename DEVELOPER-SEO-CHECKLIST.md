@@ -97,7 +97,7 @@ Open `/sitemap.xml`. You should see all pages, each URL starting with the real d
 **What was actually done:**
 - Created `src/lib/seo-sitemap.ts` (`buildSitemapXml()` + `sitemapXmlResponse()`).
 - Wired into `src/server.ts`.
-- Lists 62 URLs: 4 static + 12 industries + 38 pillars + 8 suburbs. All absolute.
+- Lists 52 URLs: 4 static + 12 industries + 28 pillars + 8 suburbs. All absolute.
 - In noindex mode the route returns HTTP 404 so the sitemap can't leak.
 - **Deliberately excluded suburb Ãƒâ€” pillar combos** - those use templated content and would be doorway pages until Item #10 audits each one.
 

@@ -218,7 +218,6 @@ const LOAN_GROUPS: {
       { icon: HandCoins, label: "Small Business Loans", desc: "Compare every funding product in one place", slug: "small-business-loans" },
       { icon: CreditCard, label: "Business Line of Credit", desc: "Revolving credit, draw what you need", slug: "business-line-of-credit" },
       { icon: LineChart, label: "Working Capital Loans", desc: "Cover payroll, inventory, seasonal gaps", slug: "working-capital-loans" },
-      { icon: Sparkles, label: "Same-Day Business Loans", desc: "Funded in as little as 24 hours", slug: "same-day-business-loans" },
       { icon: Clock, label: "Short-Term Business Loans", desc: "Fast funding, 3-24 month terms", slug: "short-term-business-loans" },
       { icon: ShieldCheck, label: "Unsecured Business Loans", desc: "No collateral, no UCC blanket", slug: "unsecured-business-loans" },
       { icon: Banknote, label: "Merchant Cash Advance", desc: "Advance against future card sales", slug: "merchant-cash-advance" },
@@ -232,9 +231,7 @@ const LOAN_GROUPS: {
       { icon: FileText, label: "SBA 7(a) Loan", desc: "The SBA's flagship working capital loan", slug: "sba-7a-loan" },
       { icon: Briefcase, label: "Business Acquisition Loans", desc: "Buy an existing Miami business", slug: "business-acquisition-loans" },
       { icon: FileText, label: "SBA Loan for Franchise", desc: "Franchise-approved SBA financing", slug: "sba-loan-for-franchise" },
-      { icon: Sparkles, label: "Startup Business Loans", desc: "Funding for new Miami ventures", slug: "startup-business-loans" },
       { icon: HandCoins, label: "Women-Owned Business Funding", desc: "Capital for women-owned businesses", slug: "women-owned-business-funding" },
-      { icon: ShieldCheck, label: "SBA Express for Veterans", desc: "Fast-track for veteran owners", slug: "sba-express-loan-for-veterans" },
       { icon: HandCoins, label: "SBA Loan for Daycare", desc: "Childcare facility financing", slug: "sba-loan-for-daycare" },
     ],
   },
@@ -247,8 +244,6 @@ const LOAN_GROUPS: {
       { icon: Receipt, label: "Invoice Factoring", desc: "Turn invoices into cash today", slug: "invoice-factoring" },
       { icon: Receipt, label: "Accounts Receivable Financing", desc: "Revolving line against open A/R", slug: "accounts-receivable-financing" },
       { icon: Factory, label: "Manufacturing Equipment Financing", desc: "CNC, packaging & production lines", slug: "manufacturing-equipment-financing" },
-      { icon: Tractor, label: "Agriculture Equipment Financing", desc: "Tractors, harvesters & implements", slug: "agriculture-equipment-financing" },
-      { icon: Leaf, label: "Landscaping Equipment Financing", desc: "Mowers, trucks and trailers", slug: "landscaping-equipment-financing" },
     ],
   },
 ];
@@ -270,30 +265,23 @@ const INDUSTRY_GROUPS: {
     heading: "Hospitality & Retail",
     items: [
       { icon: UtensilsCrossed, label: "Restaurant Loans", desc: "Fit-out, expansion and equipment", slug: "restaurant-loans" },
-      { icon: Pizza, label: "Food Truck Financing", desc: "Mobile food business funding", slug: "food-truck-financing" },
       { icon: Hotel, label: "Hotel Loans", desc: "Property acquisition & renovation", slug: "hotel-loans" },
       { icon: ShoppingBag, label: "Retail Business Loans", desc: "Inventory and storefront capital", slug: "retail-business-loans" },
       { icon: Scissors, label: "Salon Business Loans", desc: "Beauty & wellness expansion", slug: "salon-business-loans" },
-      { icon: Dumbbell, label: "Loan for Gym Business", desc: "Equipment and build-out", slug: "loan-for-gym-business" },
     ],
   },
   {
     heading: "Trades, Auto & Agriculture",
     items: [
       { icon: Hammer, label: "Commercial Construction Loan", desc: "Ground-up and renovation projects", slug: "commercial-construction-loan" },
-      { icon: Leaf, label: "Landscaping Equipment Financing", desc: "Mowers, trucks and trailers", slug: "landscaping-equipment-financing" },
       { icon: Car, label: "Auto Repair Shop Financing", desc: "Bays, lifts and diagnostics", slug: "auto-repair-shop-financing" },
-      { icon: Tractor, label: "Agriculture Equipment Financing", desc: "Tractors and farm machinery", slug: "agriculture-equipment-financing" },
-      { icon: Tractor, label: "Farm Credit Financing", desc: "Operating lines for farms", slug: "farm-credit-financing" },
       { icon: Globe, label: "Ecommerce Business Funding", desc: "Inventory and ad spend capital", slug: "ecommerce-business-funding" },
     ],
   },
   {
     heading: "Specialty & Brokers",
     items: [
-      { icon: MapPin, label: "Business Lenders Near Me", desc: "Local lender access for Miami", slug: "business-lenders-near-me" },
       { icon: Briefcase, label: "Business Loan Broker", desc: "We shop our network for you", slug: "business-loan-broker" },
-      { icon: Building2, label: "Commercial Loan Broker", desc: "Brokered CRE & business deals", slug: "commercial-loan-broker" },
     ],
   },
 ];
@@ -2051,6 +2039,9 @@ export function Footer() {
               <a href={SITE_CONFIG.phoneHref} className="hover:text-foreground">
                 {SITE_CONFIG.phone}
               </a>
+              <span className="ml-2 text-xs text-muted-foreground/80">
+                ({SITE_CONFIG.areaCodes.join(" / ")})
+              </span>
             </div>
             {SITE_CONFIG.license.state && SITE_CONFIG.license.licenseNumber && (
               <div className="pt-1 text-xs">

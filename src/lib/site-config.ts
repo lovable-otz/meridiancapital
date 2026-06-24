@@ -21,8 +21,9 @@ export const SITE_CONFIG = {
   defaultDescription:
     "Business funding in Miami, FL. Compare SBA loans, commercial real estate, hospitality and equipment financing, and working capital from trusted Miami and South Florida lenders. Pre-qualify in minutes with no impact on credit.",
 
-  phone: "(305) 555-0182",
-  phoneHref: "tel:+13055550182",
+  phone: "(786) 279-8944",
+  phoneHref: "tel:+17862798944",
+  areaCodes: ["305", "786"],
   email: "",
 
   hasPublicOffice: true,

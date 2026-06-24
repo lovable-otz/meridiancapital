@@ -1,5 +1,5 @@
 // Briarcliff Advances â€” SEO pillar pages for Miami, FL.
-// 18 Money Pillars + 20 Vertical Pillars = 38 total.
+// 14 Money Pillars + 14 Vertical Pillars = 28 total.
 
 export type PillarKind = "money" | "vertical";
 
@@ -102,16 +102,6 @@ export const MONEY_PILLARS: Pillar[] = [
     highlight: "Soft pull pre-qual",
   },
   {
-    slug: "startup-business-loans",
-    title: "Startup Business Loans",
-    kind: "money",
-    tagline: "Funding for new Miami ventures",
-    description:
-      "Capital for businesses as young as 3 months, including SBA microloans and revenue-friendly products for early-stage operators across Miami's growing tech, hospitality and creative economy.",
-    bullets: ["From 3 months in business", "SBA microloan options", "Personal credit-based options"],
-    highlight: "$5K-$250K",
-  },
-  {
     slug: "business-acquisition-loans",
     title: "Business Acquisition Loans",
     kind: "money",
@@ -152,26 +142,6 @@ export const MONEY_PILLARS: Pillar[] = [
     highlight: "Pay as you earn",
   },
   {
-    slug: "same-day-business-loans",
-    title: "Same Day Business Loans",
-    kind: "money",
-    tagline: "Get funded in as little as 24 hours",
-    description:
-      "When timing matters: same-day pre-approval and 24-hour funding for qualified Miami businesses.",
-    bullets: ["Decision in minutes", "Funded same day", "Soft pull only"],
-    highlight: "< 24 hrs",
-  },
-  {
-    slug: "business-lenders-near-me",
-    title: "Business Lenders Near Me",
-    kind: "money",
-    tagline: "Local lender access for Miami owners",
-    description:
-      "Skip the dial-the-bank routine. Get matched with 75+ vetted regional and national lenders that actively fund Miami businesses â€” bilingual specialists familiar with Latin American trade and cross-border ownership structures.",
-    bullets: ["75+ lender network", "Florida SBA Preferred banks", "Bilingual EN/ES support"],
-    highlight: "60-second match",
-  },
-  {
     slug: "business-loan-broker",
     title: "Business Loan Broker",
     kind: "money",
@@ -180,16 +150,6 @@ export const MONEY_PILLARS: Pillar[] = [
       "Independent loan advisors negotiating term sheets across 75+ lenders, then presenting the best two or three options for your Miami business.",
     bullets: ["No fee until close", "Multi-lender negotiation", "One application"],
     highlight: "Compare offers",
-  },
-  {
-    slug: "commercial-loan-broker",
-    title: "Commercial Loan Broker",
-    kind: "money",
-    tagline: "Brokered commercial real estate & business deals",
-    description:
-      "From Brickell CRE acquisitions and Wynwood mixed-use to working capital, our commercial brokerage works through SBA, conventional, bridge and private lenders to find the right structure for Miami real estate.",
-    bullets: ["SBA & conventional CRE", "Bridge & permanent debt", "$250K-$25M"],
-    highlight: "Multi-channel",
   },
   {
     slug: "equipment-financing",
@@ -214,17 +174,6 @@ export const VERTICAL_PILLARS: Pillar[] = [
     bullets: ["Lifts, alignment & ADAS", "Real estate purchase", "Up to 7-year terms"],
     highlight: "Rates from 7.5%",
     volume: 500000,
-  },
-  {
-    slug: "farm-credit-financing",
-    title: "Farm Credit Financing",
-    kind: "vertical",
-    tagline: "Operating lines for South Florida agriculture",
-    description:
-      "Seasonal-friendly operating lines and equipment financing for South Florida agricultural operators: Homestead-Redland tropical fruit producers, nursery growers, and Miami-Dade specialty ag.",
-    bullets: ["Seasonal payment options", "New & used equipment", "Trade-in friendly"],
-    highlight: "Same-week funding",
-    volume: 50000,
   },
   {
     slug: "dental-practice-loans",
@@ -320,26 +269,6 @@ export const VERTICAL_PILLARS: Pillar[] = [
     highlight: "$25K-$3M",
   },
   {
-    slug: "food-truck-financing",
-    title: "Food Truck Financing",
-    kind: "vertical",
-    tagline: "Mobile food business funding",
-    description:
-      "Finance the truck, the build-out and the commissary kitchen, including used trucks and bespoke conversions for Miami's year-round food-event circuit.",
-    bullets: ["New & used trucks", "100% financing", "Startup-friendly"],
-    highlight: "Approvals in 24 hrs",
-  },
-  {
-    slug: "loan-for-gym-business",
-    title: "Loan For Gym Business",
-    kind: "vertical",
-    tagline: "Equipment & build-out",
-    description:
-      "Outfit the floor, expand into recovery and group fitness, or refinance higher-rate equipment leases â€” Miami is one of the most concentrated boutique-fitness markets in the U.S.",
-    bullets: ["Cardio + strength bundles", "Recovery & spa add-ons", "Refinance options"],
-    highlight: "Up to $500K",
-  },
-  {
     slug: "manufacturing-equipment-financing",
     title: "Manufacturing Equipment Financing",
     kind: "vertical",
@@ -348,26 +277,6 @@ export const VERTICAL_PILLARS: Pillar[] = [
       "Finance individual machines or entire production cells with structures aligned to ROI timelines, including soft costs. Active across Doral and Medley light manufacturing.",
     bullets: ["New & used equipment", "Soft costs included", "Step payment options"],
     highlight: "Up to $10M",
-  },
-  {
-    slug: "agriculture-equipment-financing",
-    title: "Agriculture Equipment Financing",
-    kind: "vertical",
-    tagline: "Tractors, harvesters & implements",
-    description:
-      "Seasonal-friendly structures tailored to farm cash flow with deferred payments aligned to harvest cycles â€” Homestead, Redland, and South Miami-Dade growers.",
-    bullets: ["Seasonal payment options", "New & used equipment", "Trade-in friendly"],
-    highlight: "Same-week funding",
-  },
-  {
-    slug: "landscaping-equipment-financing",
-    title: "Landscaping Equipment Financing",
-    kind: "vertical",
-    tagline: "Mowers, trucks and trailers",
-    description:
-      "Build out your landscaping fleet without draining the off-season reserves â€” Miami's year-round climate keeps fleets running and crews paid 12 months a year.",
-    bullets: ["Bundle multiple units", "Skip-payment options", "Soft credit pulls"],
-    highlight: "Pre-qualify in minutes",
   },
   {
     slug: "sba-loan-for-daycare",
@@ -388,16 +297,6 @@ export const VERTICAL_PILLARS: Pillar[] = [
       "Long-term fixed financing for Miami franchise owners. Leverage SBA terms to acquire, expand or remodel approved concepts across Miami-Dade and Broward.",
     bullets: ["Up to 10-year terms", "10% down typical", "Low fixed rates"],
     highlight: "Up to $5M",
-  },
-  {
-    slug: "sba-express-loan-for-veterans",
-    title: "SBA Express Loan For Veterans",
-    kind: "vertical",
-    tagline: "Fast-track funding for veteran owners",
-    description:
-      "Expedited SBA Express loans for veteran-owned businesses with reduced fees and 36-hour SBA turnaround â€” Florida ranks in the top three states for veteran-owned business density.",
-    bullets: ["Up to $500K", "Reduced SBA fees for veterans", "36-hour SBA turnaround"],
-    highlight: "Veteran-friendly",
   },
   {
     slug: "women-owned-business-funding",
