@@ -1282,7 +1282,7 @@ function CityHubCTA() {
   const highlights = [
     "10 neighborhoods & adjacent cities",
     "38 loan programs mapped locally",
-    "Direct links to every suburb Ã— service page",
+    "Direct links to every suburb and service page",
   ];
   return (
     <section className="relative overflow-hidden py-10 sm:py-20">
