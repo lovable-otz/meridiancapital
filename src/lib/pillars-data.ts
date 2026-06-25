@@ -203,7 +203,7 @@ export const VERTICAL_PILLARS: Pillar[] = [
     kind: "vertical",
     tagline: "Fit-out, expansion & equipment",
     description:
-      “Open the second location, refresh the dining room, or weather a slow season with capital structured for Miami hospitality cash flow, from Calle Ocho cafés to Brickell steakhouses.”,
+      "Open the second location, refresh the dining room, or weather a slow season with capital structured for Miami hospitality cash flow, from Calle Ocho cafés to Brickell steakhouses.",
     bullets: ["Daily, weekly or monthly payments", "Same-day approvals", "No equity required"],
     highlight: "$25K-$2M",
     volume: 500,
