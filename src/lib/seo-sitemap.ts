@@ -38,7 +38,7 @@ ${body}
 export function sitemapXmlResponse(): Response {
   // Always return HTTP 200 so the TanStack Start prerender step does not fail
   // during a static build. When the site is not indexable, return an empty but
-  // valid <urlset> so no production URLs leak into the build artifact —
+  // valid <urlset> so no production URLs leak into the build artifact -
   // robots.txt still emits Disallow: / under the same flag.
   const body = INDEXABLE
     ? buildSitemapXml()

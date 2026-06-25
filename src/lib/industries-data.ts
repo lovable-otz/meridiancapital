@@ -163,7 +163,7 @@ export const INDUSTRIES: Industry[] = [
     icon: UtensilsCrossed,
     hero: "Fuel the next service.",
     intro:
-      "Working capital and equipment financing for Miami restaurants, food trucks, cafés and hospitality — from Calle Ocho cafeterías to South Beach hotels — sized to the realities of South Florida hospitality margins.",
+      "Working capital and equipment financing for Miami restaurants, food trucks, cafés and hospitality: from Calle Ocho cafeterías to South Beach hotels, sized to the realities of South Florida hospitality margins.",
     services: [
       make(
         "restaurant-loans",
@@ -188,7 +188,7 @@ export const INDUSTRIES: Industry[] = [
         "Café & Coffee Shop Financing",
         Coffee,
         "Espresso bars to roasteries",
-        "Equipment-heavy financing for cafés, roasters and specialty coffee concepts — including Wynwood's growing third-wave roastery cluster.",
+        "Equipment-heavy financing for cafés, roasters and specialty coffee concepts, including Wynwood's growing third-wave roastery cluster.",
         ["Equipment + working capital", "Soft credit pre-qual", "No prepayment penalty"],
         "From $15K",
       ),
@@ -225,7 +225,7 @@ export const INDUSTRIES: Industry[] = [
         "Fleet & Vehicle Financing",
         Car,
         "Light-duty to heavy fleets",
-        "Single units or full fleets: sedans, sprinter vans, box trucks and specialty vehicles with predictable payments — sized for Miami's hospitality, services and import-export economies.",
+        "Single units or full fleets: sedans, sprinter vans, box trucks and specialty vehicles with predictable payments, sized for Miami's hospitality, services and import-export economies.",
         ["TRAC leases & loans", "Upfit financing included", "Bundle multiple vehicles"],
         "100% financing",
       ),
@@ -246,7 +246,7 @@ export const INDUSTRIES: Industry[] = [
     icon: ShoppingBag,
     hero: "Stock more. Sell more.",
     intro:
-      "Inventory financing, build-outs and working capital for Miami storefronts, salons, gyms and lifestyle retail concepts — Aventura Mall flagships to Wynwood independents.",
+      "Inventory financing, build-outs and working capital for Miami storefronts, salons, gyms and lifestyle retail concepts: Aventura Mall flagships to Wynwood independents.",
     services: [
       make(
         "retail-business-loans",
@@ -262,7 +262,7 @@ export const INDUSTRIES: Industry[] = [
         "Salon & Med-Spa Loans",
         Scissors,
         "Beauty, wellness & medical aesthetics",
-        "Chair rentals, suite build-outs, product inventory, lasers and injectables — capital built for Miami's outsized beauty and aesthetics market.",
+        "Chair rentals, suite build-outs, product inventory, lasers and injectables: capital built for Miami's outsized beauty and aesthetics market.",
         ["Equipment & build-out", "Marketing & inventory", "Med-spa & aesthetics"],
         "Quick pre-qual",
       ),
@@ -329,7 +329,7 @@ export const INDUSTRIES: Industry[] = [
     icon: Home,
     hero: "Build the Miami portfolio.",
     intro:
-      "Acquisition, construction and bridge financing for South Florida investors, owner-operators and commercial real estate professionals — one of the most active CRE markets in the country.",
+      "Acquisition, construction and bridge financing for South Florida investors, owner-operators and commercial real estate professionals, in one of the most active CRE markets in the country.",
     services: [
       make(
         "commercial-real-estate-loans",
@@ -345,7 +345,7 @@ export const INDUSTRIES: Industry[] = [
         "Business Acquisition Loans",
         Briefcase,
         "Buy the building & the business",
-        "Combined acquisition packages that finance the operating business and the real estate it sits on in one closing — common in Coral Gables succession deals.",
+        "Combined acquisition packages that finance the operating business and the real estate it sits on in one closing, common in Coral Gables succession deals.",
         ["10% down with SBA", "Goodwill financing", "Earn-out friendly"],
         "Close in 45-60 days",
       ),
@@ -421,7 +421,7 @@ export const INDUSTRIES: Industry[] = [
     icon: Cpu,
     hero: "Non-dilutive growth capital.",
     intro:
-      "Revenue-based financing, lines of credit and equipment leases for the Miami tech cluster — Wynwood-anchored SaaS, eMerge-driven startups, and the international tech operators using Miami as their Americas HQ.",
+      "Revenue-based financing, lines of credit and equipment leases for the Miami tech cluster: Wynwood-anchored SaaS, eMerge-driven startups, and the international tech operators using Miami as their Americas HQ.",
     services: [
       make(
         "revenue-based-financing",
@@ -483,7 +483,7 @@ export const INDUSTRIES: Industry[] = [
         "Inventory Financing",
         Package,
         "Land the next PO",
-        "Finance inbound inventory with terms aligned to your sell-through cycle, perfect for seasonal SKUs and BFCM ramps — sized for South Florida 3PL operators.",
+        "Finance inbound inventory with terms aligned to your sell-through cycle, perfect for seasonal SKUs and BFCM ramps, sized for South Florida 3PL operators.",
         ["Up to 80% of cost", "Pay as you sell", "Multi-SKU support"],
         "Pre-approve in 24 hours",
       ),

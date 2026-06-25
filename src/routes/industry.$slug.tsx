@@ -130,7 +130,7 @@ function IndustryPage() {
         </section>
       )}
 
-      {/* Services list — uniform card grid */}
+      {/* Services list - uniform card grid */}
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
